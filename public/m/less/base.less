@@ -1,0 +1,91 @@
+// 声明一个 主题色
+@mainColor:#006699;
+// 初始化代码
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0,0);
+}
+li{
+    list-style: none;
+}
+input{
+    border: 0 none;
+    outline: 0 none;
+
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+img{
+    border: none;
+    vertical-align: middle;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+// 头部区域样式
+#header {
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0px;
+    background-color: @mainColor;
+    z-index: 999;
+    h4{
+        color: #fff;
+        line-height: 45px;
+        margin: 0px;
+        text-align: center;
+        font-weight: normal;
+    }
+    >a{
+        color: #fff;
+        &.fa-search {
+            position: absolute;
+            right: 20px;
+            top: 14px;
+        }
+    }
+}
+
+// 主体的公共样式
+// #main{
+    
+//     padding: 45px 0;
+// }
+// 底部的公共样式
+#footer {
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0px;
+    background-color: @mainColor;
+    .mui-row{
+        >div{
+            >a{
+                color: #fff;
+                display: block;
+                font-size: 12px;
+                text-align: center;
+                padding: 5px 0;
+                &.active{
+                    color: orange;
+                }
+                >i{
+                    display: block;
+                    font-size: 14px;
+                }
+                >span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
