@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自写版的乐淘移动端</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <!--1. 引入mui 的css 文件/ -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!--2. 引入字体图标的css 文件 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!--3. 引入主页的less 文件  注意rel ="stylesheet/less" -->
+    <link rel="stylesheet/less" href="./less/login.less">
+    <!--4. 引入less 的编译文件 -->
+    <script src="./lib/less/less.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- 头部区域  -->
+    <header id="header">
+        <a href="#" class="icon_back fa fa-arrow-left"></a>
+        <h4>登录</h4>
+
+    </header>
+    <!-- 中间主题区域 -->
+    <main id="main">
+       <form action="" class="login-form">
+           <input type="text" placeholder="用户名/手机号">
+           <input type="password" placeholder="密码">
+           <i class="mui-icon mui-icon-eye"></i>
+           <botton type="botton" class="login-btn">登录</botton>
+       </form>
+     
+        <a href="#" class="register mui-pull-right">免费注册</a>
+    </main>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a href="index.html" class="active">
+                    <i class="fa fa-home"></i>首页</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="category.html">
+                    <i class="fa fa-bars"></i>分类</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="cart.html">
+                    <i class="fa fa-shopping-cart"></i>购物车</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="user.html">
+                    <i class="fa fa-user"></i>会员中心</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+     
+        
+ 
+    <!--5. 引入 mui 的js 文件  -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!--6. 引入zepto de js  文件  操作元素发送请求 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 7. 引入模板引擎的js 文件 -->
+    <script src="./lib/artTemplate/template.js"></script>
+    <!-- 8.  引入主页的 js 文件 -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

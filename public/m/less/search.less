@@ -1,0 +1,61 @@
+@import "base.less";
+//  中间主体的样式
+#main{
+    .search-form{
+        display: flex;
+        padding: 10px;
+        .input-search{
+            flex: 1;
+            height: 30px;
+            text-align: left;
+            font-size: 14px;
+            border: 1px solid @mainColor;
+            border-radius: 6px 0px 0px 6px;
+            background-color: #fff;
+            margin-bottom: 0px;
+        }
+        .btn-search{
+            width: 60px;
+            height: 30px;
+            border: 1px solid @mainColor;
+            border-radius: 0px 6px 6px 0px;
+            background-color: @mainColor;
+        }
+
+    }
+    .search-history{
+        padding: 10px;
+      
+        .title{
+         border: 1px solid #ccc;
+         padding: 8px 0;
+
+        }
+        .content{
+           >ul{
+               >li{
+                display: flex;
+                border: 1px solid #ccc;
+                border-top: 0;
+                padding: 0px 5px;
+                   a{
+                     
+                       flex: 1;
+                    display:block;
+                    height: 30px;
+                    line-height: 30px;
+
+                   }
+                   i{
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       width: 30px;
+                       height: 30px;
+                   }
+               }
+           }
+        }
+
+    }
+}
